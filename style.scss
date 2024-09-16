@@ -17,6 +17,7 @@ $white: #FFF;
 body {
     background-color: $q-bg;
     font-family: 'Inter', sans-serif;
+    letter-spacing: -0.2px;
 }
 
 .title {
@@ -62,7 +63,6 @@ body {
 
     li {
         line-height: 32px;
-        letter-spacing: -0.2px;
     }
 
     span {
@@ -71,6 +71,7 @@ body {
 
     a {
         text-decoration: none;
+        color: $link;
     }
 }
 
