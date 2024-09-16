@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+// Heading 2 24px (1.5rem) 600 weight
+// Body 16px (1rem) 400 weight
+
+$link: #4E80EE;
+$text: #030616;
+$line: #D2D5DA;
+$q-bg: #F8FAFC;
+$white: #FFF;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $q-bg;
+    font-family: 'Inter', sans-serif;
+}
+
+.title {
+    height: 223px;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+.q-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 72px;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    max-width: 640px;
+
+    h2 {
+        margin-bottom: 32px;
+    }
+
+    ol, ul {
+        list-style-position: outside;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        margin-left: 24px;
+    }
+
+    li {
+        line-height: 32px;
+        letter-spacing: -0.2px;
+    }
+
+    span {
+        font-weight: 700;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+hr {
+    border: 1px solid $line;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+// @media (max-width: 1024px) {}
+
+@media (max-width: 640px) {
+    .questions {
+        margin-left: 24px;
+    }
+}
